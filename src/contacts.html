@@ -1,0 +1,77 @@
+<section class="contacts">
+    <h1 class="contacts-title">Сontacts</h1>
+    <picture>
+        <source srcset="./images-contacts/contacts-desk.jpg 1x, ./images-contacts/contacts-desk@2x.jpg 2x" media="(min-width: 1200px)" />
+        <source srcset="./images-contacts/contacts-tablet.jpg 1x, ./images-contacts/contacts-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+        <source srcset="./images-contacts/contacts-mob.jpg 1x, ./images-contacts/contacts-mob@2x.jpg 2x" media="(max-width: 767px)" />
+        <img src="./images-contacts/contacts-tablet.jpg" alt="gamer gudgets">
+    </picture>
+    <div>
+        <p> In case of queries about order handling and/or delay, drop us an email at
+        <a class="contacts-mail" href="mailto:info@shopforgamers.com">info@shopforgamers.com</a></p>
+        <address class="contacts-address">
+            <div>
+                <p>Email</p>
+                <a class="contacts-link" href="mailto:sfg.info@gmail.com">sfg.info@gmail.com</a>
+            </div>
+            <div>
+                <p>Phone number</p>
+                <ul>
+                    <li><a class="contacts-link" href="tel:+380936432288">+38 (093) 643 22 88</a></li>
+                    <li><a class="contacts-link" href="tel:+380503454423">+38 (050) 345 44 23</a></li>
+                </ul>
+            </div>    
+        </address>
+    </div>
+    <div>
+        <strong class="contacts-accent-text">Contact us</strong>
+        <form class="contacts-form">
+            <div role="group">
+                    <label class="contacts-label">
+                        <input class="modal__row" type="text" id="name" placeholder="Name">
+                    </label>
+                    <label class="contacts-label">
+                        <input class="modal__row" type="email" name="email" placeholder="Email">
+                    </label>
+                    <label class="contacts-label">
+                        <span class="contacts-label-title">Leave your message</span>
+                        <textarea class="contacts-label-textarea" name="message"></textarea>
+                    </label>
+            </div>
+        </form>
+        <button class="button button-send" type="submit" data-modal-open>Send</button>
+    </div>
+
+<!--Модалка-->
+
+    <div class="contacts-backdrop is-hidden" data-modal>
+        <div class="contacts-modal">
+            <strong class="contacts-modal-text">Thank you for your message! We will contact you soon!</strong>
+            <a href="./index.html" class="button button-ok">Ok</a>
+    
+            <button class="contacts-modal--btn-close" type="button" data-modal-close>
+                <svg class="modal__close-icon" width="31" height="31">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        (() => {
+                const refs = {
+                    openModalBtn: document.querySelector("[data-modal-open]"),
+                    closeModalBtn: document.querySelector("[data-modal-close]"),
+                    modal: document.querySelector("[data-modal]"),
+                };
+
+                refs.openModalBtn.addEventListener("click", toggleModal);
+                refs.closeModalBtn.addEventListener("click", toggleModal);
+
+                function toggleModal() {
+                    refs.modal.classList.toggle("is-hidden");
+                }
+            })();
+    </script>
+
+</section>
