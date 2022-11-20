@@ -1,0 +1,127 @@
+/*Вказуйте 2 класи: остновний клас button та додатковий button--*** */
+
+.button {
+    padding: 16px 20px;
+    font-family: inherit;
+    background-color: $accent-color;
+    color: $black;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: none;
+    border-radius: 16px;
+    border: none;
+ }
+
+ .button--shopnow {
+    transition: box-shadow 250ms linear;
+
+    &:hover, &:focus {
+        box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+        }
+ }
+
+ .button--startshopping {
+    font-size: 32px;
+    line-height: 1.19;
+    text-transform: uppercase;
+    color: $background-color;
+
+    transition: box-shadow 250ms linear;
+
+    &:hover, &:focus {
+        box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+        }
+ }
+
+ .button--viewall {
+    padding: 16px 48px;
+    font-size: 28px;
+    line-height: 1.18;
+    color: $background-color;
+    background-color: $primary-text-color;
+
+    transition: box-shadow 250ms linear;
+
+    &:hover, &:focus {
+        box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5), 0px 4px 10px rgba(134, 229, 67, 0.1);
+        }
+ }
+
+.button--buyitnow {
+    padding: 16px 64px;
+    font-size: 32px;
+    line-height: 1.19;
+    text-transform: uppercase;
+    color: $background-color;
+
+    transition: box-shadow 250ms linear;
+
+    &:hover, &:focus {
+        box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+        }
+ }
+
+.button--addtocart {
+    padding: 16px 52px;
+    font-size: 32px;
+    line-height: 1.19;
+    text-transform: uppercase;
+    color: $accent-color;
+    background-color: $background-color;
+    border: 1px solid $accent-color;
+ }
+
+.button--send {
+    padding: 16px 112px;
+    font-size: 32px;
+    line-height: 1.19;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    background-color: $background-color;
+    border: 1px solid $primary-text-color;
+ }
+
+.button--filter {
+    width: 168px;
+    font-size: 16px;
+    line-height: 1.19;
+    color: $accent-color;
+    background-color: $background-color;
+    border: 1px solid $accent-color;
+
+    transition: box-shadow 250ms linear, color 250ms linear, background-color 250ms linear;
+
+    &:active {
+        color: $background-color;
+        background-color: $accent-color;
+        box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1), 0px 4px 20px rgba(134, 229, 67, 0.4);
+        }
+ }
+
+.button--cool {
+    padding: 21px 0px;
+    font-size: 32px;
+    line-height: 1.19;
+    text-transform: uppercase;
+    color: $background-color;
+    border: 1px solid $accent-color;
+
+    transition: box-shadow 250ms linear;
+
+    &:active {
+        box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1), 0px 4px 20px rgba(134, 229, 67, 0.4);
+        }
+ }
+
+ .button--bad {
+    padding: 21px 0px;
+    font-size: 32px;
+    line-height: 1.19;
+    text-transform: uppercase;
+    color: $accent-color;
+    background-color: $background-color;
+    border: 1px solid $accent-color;
+ }
+
