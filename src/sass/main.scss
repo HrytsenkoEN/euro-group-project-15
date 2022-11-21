@@ -1,8 +1,9 @@
 @import './common';
 @import './base/reset';
+@import './base/variables';
 // @import './base/main.scss';
 @import './layout/container';
 // @import './layout/main.scss';
 @import './components/accessories';
 // @import './components/main.scss';
-@import"./components/hero";
+@import './components/blog-article';
