@@ -3,8 +3,8 @@
 .button {
     padding: 16px 20px;
     font-family: inherit;
-    background-color: $accent-color;
-    color: $black;
+    background-color: var(--accent-color);
+    color: var(--black);
     font-weight: 700;
     font-size: 14px;
     text-align: center;
@@ -12,6 +12,33 @@
     box-shadow: none;
     border-radius: 16px;
     border: none;
+ }
+
+ .btn-tabs {
+    width: 124px;
+    padding: 8px;
+    height: 35px;
+    font-size: 16px;
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    transition: background-color 250ms linear, box-shadow 250ms linear;
+
+    @media screen and (min-width: 768px) {
+        width: 132px;
+        height: 51px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 168px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--black);
+        box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+    }
  }
 
  .button--shopnow {
@@ -26,7 +53,7 @@
     font-size: 32px;
     line-height: 1.19;
     text-transform: uppercase;
-    color: $background-color;
+    color: var(--background-color);
 
     transition: box-shadow 250ms linear;
 
@@ -39,8 +66,8 @@
     padding: 16px 48px;
     font-size: 28px;
     line-height: 1.18;
-    color: $background-color;
-    background-color: $primary-text-color;
+    color: var(--background-color);
+    background-color: var(--primary-text-color);
 
     transition: box-shadow 250ms linear;
 
@@ -54,7 +81,7 @@
     font-size: 32px;
     line-height: 1.19;
     text-transform: uppercase;
-    color: $background-color;
+    color: var(--background-color);
 
     transition: box-shadow 250ms linear;
 
@@ -68,9 +95,9 @@
     font-size: 32px;
     line-height: 1.19;
     text-transform: uppercase;
-    color: $accent-color;
-    background-color: $background-color;
-    border: 1px solid $accent-color;
+    color: var(--accent-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-color);
  }
 
 .button--send {
@@ -78,24 +105,24 @@
     font-size: 32px;
     line-height: 1.19;
     text-transform: uppercase;
-    color: $primary-text-color;
-    background-color: $background-color;
-    border: 1px solid $primary-text-color;
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-text-color);
  }
 
 .button--filter {
     width: 168px;
     font-size: 16px;
     line-height: 1.19;
-    color: $accent-color;
-    background-color: $background-color;
-    border: 1px solid $accent-color;
+    color: var(--accent-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-color);
 
     transition: box-shadow 250ms linear, color 250ms linear, background-color 250ms linear;
 
     &:active {
-        color: $background-color;
-        background-color: $accent-color;
+        color: var(--background-color);
+        background-color: var(--accent-color);
         box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1), 0px 4px 20px rgba(134, 229, 67, 0.4);
         }
  }
@@ -105,8 +132,8 @@
     font-size: 32px;
     line-height: 1.19;
     text-transform: uppercase;
-    color: $background-color;
-    border: 1px solid $accent-color;
+    color: var(--background-color);
+    border: 1px solid var(--accent-color);
 
     transition: box-shadow 250ms linear;
 
@@ -120,8 +147,8 @@
     font-size: 32px;
     line-height: 1.19;
     text-transform: uppercase;
-    color: $accent-color;
-    background-color: $background-color;
-    border: 1px solid $accent-color;
+    color: var(--accent-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-color);
  }
 
