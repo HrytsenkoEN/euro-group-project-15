@@ -1,10 +1,8 @@
 @import './common';
-
-
-@import './base/main.scss';
-
-@import './layout/main.scss';
-
-
-@import './components/main.scss';
-
+@import './base/reset';
+// @import './base/main.scss';
+@import './layout/container';
+// @import './layout/main.scss';
+@import './components/accessories';
+// @import './components/main.scss';
+@import './components/blog-article';
