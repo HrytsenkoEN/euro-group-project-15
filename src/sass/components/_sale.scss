@@ -1,6 +1,6 @@
 .sale {
     padding-bottom: 48px;
-    background-image: url(./images/sale-images/salebg-imagemob.png), url(./images/sale-images/salebg-imagemob1.jpg);
+    background-image: url(../images/sale-images/salebg-imagemob.png), url(../images/sale-images/salebg-imagemob1.jpg);
     background-size: 100%, cover;
     background-position: top, center;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         & {
-            background-image: url(./images/sale-images/salebg-imagemob@2x.png), url(./images/sale-images/salebg-imagetab@2x.jpg);
+            background-image: url(../images/sale-images/salebg-imagemob@2x.png), url(../images/sale-images/salebg-imagetab@2x.jpg);
 
         }
     }
@@ -22,13 +22,13 @@
     @media screen and (min-width: 768px) {
         padding-bottom: 120px;
         background-position: top;
-        background-image: url(./images/sale-images/salebg-imagetab.jpg);
+        background-image: url(../images/sale-images/salebg-imagetab.jpg);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             & {
-                background-image: url(./images/sale-images/salebg-imagetab@2x.jpg);
+                background-image: url(../images/sale-images/salebg-imagetab@2x.jpg);
             }
 
         }
@@ -40,13 +40,13 @@
         background-size: 100%, cover;
         background-position: top, center;
 
-        background-image: url(./images/sale-images/salebg-linesdesc.png), url(./images/sale-images/sliderbg-imagedesc.jpg);
+        background-image: url(../images/sale-images/salebg-linesdesc.png), url(../images/sale-images/sliderbg-imagedesc.jpg);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             & {
-                background-image: url(./images/sale-images/salebg-linesdesc@2x.png), url(./images/sale-images/sliderbg-imagedesc@2x.jpg);
+                background-image: url(../images/sale-images/salebg-linesdesc@2x.png), url(../images/sale-images/sliderbg-imagedesc@2x.jpg);
             }
 
         }
