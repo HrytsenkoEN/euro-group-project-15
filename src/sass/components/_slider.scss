@@ -1,0 +1,226 @@
+.slader {
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 48px;
+    background-color: var(--background-color);
+
+
+    @media screen and (min-width:768px) {
+        padding-top: 120px;
+        padding-bottom: 96px;
+    }
+
+    @media screen and (min-width:1280px) {
+        padding-bottom: 160px;
+        background-image: url(../images/slider-images/sliderbg-imagedesc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/slider-images/sliderbg-imagedesc@2x.jpg);
+            }
+
+        }
+    }
+}
+
+
+.slader-title,
+.slider-subtitle {
+
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+}
+
+
+.swiper {
+    width: 100%;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    overflow: hidden;
+    
+    
+        @media screen and (min-width: 320px) {
+            width: 320px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            width: 1280px;
+        }
+    }
+
+
+
+.swiper-wrapper {
+
+    width: 321px;
+    height: 498px;
+
+    @media screen and (min-width:768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 1280px;
+        height: 507px;
+    }
+}
+
+.banner-image {
+
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.swiper-slide {
+    position: relative;
+}
+
+.first-slider-description {
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 405px;
+    left: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    background: linear-gradient(270deg, #1EDDE0 13.26%, #8BDA41 51.01%, #EF001B 107.89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.first-slider-description-separeted {
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    left: 35px;
+    top: 360px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.18;
+    background: linear-gradient(270deg, #1EDDE0 13.26%, #8BDA41 51.01%, #EF001B 107.89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @media screen and (min-width: 1280px) {
+        left: 345px;
+        top: 340px;
+    }
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}
+
+
+.second-slider-description {
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 405px;
+    left: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    background: linear-gradient(270deg, #03FE8F 4.61%, #EBDCFF 57.91%, #FF98F3 92.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @media screen and (min-width:768px) {
+        left: 35px;
+        top: 340px;
+        font-size: 56px;
+        line-height: 1.18;
+    }
+
+    @media screen and (min-width:1280px) {
+        left: 49px;
+        top: 340px;
+    }
+
+}
+
+.third-slider-description {
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 405px;
+    left: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    background: linear-gradient(270deg, #FFFFFF 13.26%, #693CF9 60.87%, #F475EB 107.89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @media screen and (min-width:768px) {
+        left: 35px;
+        top: 260px;
+        font-size: 56px;
+        line-height: 1.18;
+    }
+
+    @media screen and (min-width:1280px) {
+        left: 49px;
+        top: 260px;
+    }
+
+}
+
+
+.swiper-pagination {
+    position: absolute;
+    top: 520px;
+    gap: 16x;
+
+    @media screen and (min-width:768px) {
+        top: 650px;
+    }
+}
+
+.swiper-pagination-bullet {
+    margin-right: 16px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--primary-text-color);
+    opacity: 1;
+}
+
+
+.swiper-pagination-clickable .swiper-pagination-bullet-active {
+    width: 40px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: var(--primary-text-color);
+}
