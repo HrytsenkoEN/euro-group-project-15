@@ -1,0 +1,372 @@
+section {
+    padding-top: 40px;
+        padding-bottom: 40px;
+    @include desktop{
+       padding-left: 40px;
+       padding-right: 40px;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+textarea {
+    resize: none;
+    outline: none;
+}
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    border: none;
+}
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    @include mobile {
+        width: 480px;
+    }
+    @include tablet {
+        width: 768px;
+    }
+    @include desktop {
+        width: 1280px;
+    }
+}
+// ---------------для секціїї-------------
+
+// -------------головний заголовок
+
+.takeorder-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-bottom: 1px solid #7BE34A;
+    @include min-mobile{
+      font-size: 24px;
+      line-height: 1.16;
+      margin-bottom: 35px;
+    }
+    @include tablet{
+      font-size: 56px;
+      line-height: 1.18;
+      margin-bottom: 51px;
+    }
+    @include desktop{
+       font-size: 56px;
+       line-height: 1.18;
+       padding-left: 142px;
+       margin-bottom: 75px;
+    }
+}
+// ------------заголовок який на дисктопі
+.takeorder-subtitle {
+@include desktop{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.18;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+    @media screen and (max-width:1279px) {
+        display: none;
+    }
+}
+// ----------заголовок який видно на мобілці
+.takeorder-sub-subtitle {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.18;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    @media screen and (min-width: 320px) and (max-width: 469px) {
+        font-size: 24px;
+    }
+    @include mobile {
+        font-size: 32px;
+    }
+    @include tablet {
+        font-size: 56px;
+    }
+    @include desktop {
+        display: none;
+    }
+}
+// -----------заголовок перед формой
+.takeorder-title-top {
+   font-weight: 600;
+   color: #86E543;
+    @include min-mobile{
+            font-size: 24px;
+            line-height: 1.17;
+            margin-top: 32px;
+            margin-bottom: 16px;
+    }
+    @include tablet{
+        font-size: 36px;
+            line-height: 1.17;
+            margin-top: 48px;
+            margin-bottom: 48px;
+    }
+    @include desktop{
+        font-size: 36px;
+        line-height: 1.17;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+}
+
+.takeorder-title-des {
+    display: none;
+    @include desktop {
+        display: block;
+        font-size: 56px;
+        color: var(--primary-text-color);
+    }
+}
+.takeorder-picture{
+    border-radius: 12px;
+}
+.takeorder-top {
+  @include desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+.takeorder-mob {
+    margin-top: 16px;
+}
+
+.takeorder-mob,
+.takeorder-price-mob{
+ @include tablet {
+            display: none;
+        }
+}
+.takeorder-list {
+        display: flex;
+        gap: 24px;
+    }
+ .takeorder-list-mob{
+    @include max-mobile{
+        display: flex;
+            gap: 16px;
+    }
+    @include desktop{
+        display: none;
+    }
+ }
+.take-pic-mob{
+    border-radius: 4px;
+}
+.takeorder-price {
+        @include min-mobile {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+                margin-bottom: 16px;
+            }
+            @include desktop {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+    }
+}
+
+.takeorder-price-old-mob{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        text-decoration-line: line-through;
+        color: #8D9289;
+}
+.takeorder-price-old{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration-line: line-through;
+    color: #8D9289;
+    @include min-mobile{
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}
+.takeorder-price-new-mob{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        text-align: right;
+        color: var(--accent-color);
+}
+.takeorder-price-new{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--accent-color);
+    @include min-mobile{
+        display: block;
+        margin-top: 24px;
+        font-size: 23px;
+    }
+}
+.takeorder-subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.17;
+    color: #FFFFFF;
+}
+.takeorder-input {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #86E543;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 1.11;
+    color: #FFFFFF;
+    margin-bottom: 64px;
+    padding-left: 10px;
+    @include min-mobile{
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 44px;
+    }
+}
+.takeorder-input::placeholder,
+.takeorder-textarea::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 1.11;
+    @include min-mobile {
+            font-size: 16px;
+            line-height: 1.25;
+            margin-bottom: 44px;
+        }
+}
+.takeorder-textarea {
+    width: 589px;
+    height: 310px;
+    background-color: transparent;
+    border: 1px solid #86E543;
+    border-radius: 0px;
+    padding: 10px;
+    @include min-mobile{
+        width:287px ;
+        height: 95px;
+    }
+}
+.takeorder-label-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.11;
+    color: #CDCDCD;
+    @include min-mobile{
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+.takeorder-label {
+    @include min-mobile{
+        display: block;
+    }
+    @include desktop{
+        display: flex;
+        flex-direction: column;
+    }
+}
+ .takeorder-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+ @include desktop{
+    flex-wrap:nowrap;
+    align-items: baseline;
+ }
+}
+.takeorder-part-right {
+    @include max-mobile {
+        display: none;
+    }
+}
+.takeorder-right {
+    @include desktop{
+            margin-left: 20px;
+    }
+}
+select {
+    appearance: none;
+    outline: 0;
+    /* box-shadow: none; */
+    border: none;
+    background-color: transparent;
+    /* background-image: none; */
+    width: 100%;
+}
+.takeorder-blok-select {
+    position: relative;
+    display: flex;
+    width: 590px;
+    height: 13px;
+    overflow: hidden;
+    border-bottom: 1px solid #86E543;
+    padding-left: 10px;
+    margin-bottom: 64px;
+    @include min-mobile{
+        width: 288px;
+    }
+}
+.takeorder-select {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.11;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.takeorder-blok-select::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    display: block;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15.4px 10px 0 10px;
+    border-color: #FFFFFF transparent transparent transparent;
+}
+// .from-icon-check {
+//     position: absolute;
+//     display: inline-block;
+//     top: 3px;
+//     left: 7px;
+//     width: 16px;
+//     height: 15px;
+//     border: 2px solid #212121;
+//     border-radius: 2px;
+//     transition: border 250ms var(--accent-text-color),
+//         background-color 250ms var(--accent-text-color);
+// }
