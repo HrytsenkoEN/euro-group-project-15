@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(./images/hero-images/hero2mob.png), url(./images/hero-images/heromob.jpg);
+    background-image: url(../images/hero-images/hero2mob.png), url(../images/hero-images/heromob.jpg);
     background-size: contain, cover;
     background-position: top right, center;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         & {
-            background-image: url(./images/hero-images/hero2mob@2x.png), url(./images/hero-images/heromob@2x.jpg);
+            background-image: url(../images/hero-images/hero2mob@2x.png), url(../images/hero-images/heromob@2x.jpg);
 
         }
     }
@@ -20,13 +20,13 @@
 
         background-size: contain, cover;
         background-position: top 33px right 0px, center;
-        background-image: url(./images/hero-images/hero2tab.png), url(./images/hero-images/herotab.jpg);
+        background-image: url(../images/hero-images/hero2tab.png), url(../images/hero-images/herotab.jpg);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             & {
-                background-image: url(./images/hero-images/hero2tab@2x.png), url(./images/hero-images/herotab2x.jpg);
+                background-image: url(../images/hero-images/hero2tab@2x.png), url(../images/hero-images/herotab2x.jpg);
             }
 
         }
@@ -35,13 +35,13 @@
         @media screen and (min-width:1280px) {
 
 
-            background-image: url(./images/hero-images/hero2desc.png), url(./images/hero-images/herodesc.jpg);
+            background-image: url(../images/hero-images/hero2desc.png), url(../images/hero-images/herodesc.jpg);
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 & {
-                    background-image: url(./images/hero-images/hero2desc@2x.png), url(./images/hero-images/herodesc@2x.jpg);
+                    background-image: url(../images/hero-images/hero2desc@2x.png), url(../images/hero-images/herodesc@2x.jpg);
                 }
 
             }
@@ -81,7 +81,7 @@
     font-size: 56px;
     line-height: 1.18;
     text-align: left;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
     @media screen and (min-width:1280px) {
         margin-bottom: 40px;
@@ -105,7 +105,7 @@
     font-size: 32px;
     line-height: 1.19;
     text-align: center;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
 
     @media screen and (min-width:768px) {
@@ -133,8 +133,8 @@
 
     text-transform: uppercase;
 
-    color: $background-color;
-    background-color: $accent-color;
+    color: var(--background-color);
+    background-color: var(--accent-color);
     border-color: transparent;
     border-radius: 16px;
 
