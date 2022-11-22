@@ -1,0 +1,76 @@
+.footer {
+  background-color: #001414;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-container {
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer-logo {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  max-width: 116px;
+  height: 56px;
+  margin-top: 40px;
+}
+
+.footer-menu {
+  display: block;
+  margin-top: 40px;
+  margin-left: 118px;
+  margin-right: auto;
+}
+
+.footer-menu-list {
+  display: block;
+  color: #ffffff;
+}
+
+.footer-menu-link {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer-social {
+  display: block;
+  margin-top: 40px;
+  margin-left: 118px;
+}
+
+.footer-social-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-contacts-block {
+  display: block;
+  margin-top: 24px;
+  margin-left: 281px;
+  margin-right: auto;
+}
+
+.footer-contacts-link {
+  display: block;
+  color: #8d9289;
+  margin-bottom: 8px;
+}
+
+.footer-contacts-text {
+  color: #ffffff;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
