@@ -1,16 +1,27 @@
 @import './common';
 @import './base/variables';
 @import './utils/mixin';
+@import './base/buttons';
 @import './base/reset';
 // @import './base/main.scss';
 @import './layout/container';
 // @import './layout/main.scss';
+@import './components/header';
 @import './components/accessories';
 // @import './components/main.scss';
+@import './components/blog-page';
 @import './components/footer';
 @import './components/blog-article';
-@import './components/blog-page';
+//<<<<<<< HEAD
+
 @import'./components/slider';
 @import'./components/hero';
 @import'./components/sale';
 @import'./components/take-order';
+//=======
+
+@import './components/slider';
+@import './components/hero';
+@import './components/sale';
+@import './components/take-order';
+//>>>>>>> main
