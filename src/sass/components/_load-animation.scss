@@ -1,0 +1,45 @@
+//load-animation
+.load-ani{
+    display: flex;
+    margin-top: 40px;
+    gap: 16px;
+    justify-content: center;
+}
+.load-ani-item{
+    height: 16px;
+  width: 16px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+    
+  &:first-child{
+    animation: load 12s infinite 3s ;
+  }
+  &:nth-last-child(2){
+    animation: load 12s infinite 6s;
+  }
+  &:last-child{
+    animation: load 12s infinite 9s ;
+  }
+}
+@keyframes load {
+    0% {
+        width: 16px;
+        border-radius: 50%;
+    }
+  
+   25%{
+    width: 40px;
+    border-radius: 40px; 
+   }
+   
+   50%{
+    width: 16px;
+        border-radius: 50%;
+   }
+   
+
+    100%{
+        width: 16px;
+        border-radius: 50%;
+    }
+  }   
