@@ -11,38 +11,38 @@
     margin-left: auto;
     margin-right: auto;
     background-position: center;
-    background-color: $background-color;
-    background-image: url(/images-contacts/Vector\ 26.svg),
-    url(/images-contacts/Vector\ 27.svg), url(/images-contacts/background-mob.jpg);
+    background-color: var(--background-color);
+    background-image: url('../images-contacts/vector-26.svg'),
+    url('../images-contacts/vector-27.svg'), url('../images-contacts/background-mob.jpg');
     background-position: 0px 48px, 0px 52px, 0px 0px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images-contacts/Vector\ 26.svg),
-    url(/images-contacts/Vector\ 27.svg), url(/images-contacts/background-mob@2x.jpg);} 
+    background-image: url('../images-contacts/vector-26.svg'),
+    url('../images-contacts/vector-27.svg'), url('../images-contacts/background-mob@2x.jpg');} 
 
     @media screen and (min-width: 768px) {
-    background-image: url(/images-contacts/Vector\ 22.svg),
-    url(/images-contacts/Vector\ 24.svg), url(/images-contacts/background-tablet.jpg);
+    background-image: url('../images-contacts/vector-22.svg'),
+    url('../images-contacts/vector-24.svg'), url('../images-contacts/background-tablet.jpg');
     background-position: 0px 174px, 0px 168px, 0px 0px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images-contacts/Vector\ 22.svg),
-    url(/images-contacts/Vector\ 24.svg), url(/images-contacts/background-tablet@2x.jpg);}}
+    background-image: url('../images-contacts/vector-22.svg'),
+    url('../images-contacts/vector-24.svg'), url('../images-contacts/background-tablet@2x.jpg');}}
 
     @media screen and (min-width:1280px){
-    background-image: url(/images-contacts/Vector\ 23.svg),
-    url(/images-contacts/Vector\ 25.svg), url(/images-contacts/background-desk.jpg);
+    background-image: url('../images-contacts/vector-23.svg'),
+    url('../images-contacts/vector-25.svg'), url('../images-contacts/background-desk.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images-contacts/Vector\ 23.svg),
-    url(/images-contacts/Vector\ 25.svg), url(/images-contacts/background-desk@2x.jpg);}}
+    background-image: url('../images-contacts/vector-23.svg'),
+    url('../images-contacts/vector-25.svg'), url('../images-contacts/background-desk@2x.jpg');}}
 }
 
 .contacts-title {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
     @media screen and (min-width:768px){
         font-size: 56px;
@@ -64,7 +64,7 @@
     margin-right: auto;
     background-position: center;
     overflow: hidden;
-    background-image: url(/images-contacts/contacts-mob.jpg);
+    background-image: url('../images-contacts/contacts-mob.jpg');
 
     @media screen and (min-width:768px){
         background-size: cover;
@@ -81,19 +81,19 @@
         margin-bottom: 57px;}
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images-contacts/contacts-mob@2x.jpg);} 
+    background-image: url('../images-contacts/contacts-mob@2x.jpg');} 
 
     @media screen and (min-width: 768px) {
-    background-image: url(/images-contacts/contacts-tablet.jpg);
+    background-image: url('../images-contacts/contacts-tablet.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images-contacts/contacts-tablet@2x.jpg);}}
+    background-image: url('../images-contacts/contacts-tablet@2x.jpg');}}
 
     @media screen and (min-width:1280px){
-    background-image:  url(/images-contacts/contacts-desk.jpg);
+    background-image:  url('../images-contacts/contacts-desk.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image:  url(/images-contacts/contacts-desk@2x.jpg);}}
+    background-image:  url('../images-contacts/contacts-desk@2x.jpg');}}
 }
 
 .contacts-position{
@@ -115,7 +115,7 @@
 .contacts-text {
     font-size: 16px;
     line-height: 1.19;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
     @media screen and (min-width:768px){
         font-size: 24px;
@@ -127,7 +127,7 @@
     margin-top: 19px;
     font-size: 16px;
     line-height: 1.19;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
     @media screen and (min-width:768px){
         margin-top: 28px;
@@ -139,7 +139,7 @@
     display: block;
     font-size: 16px;
     line-height: 1.19;
-    color: $secondary-text-color;
+    color: var(--secondary-text-color);
     margin-top: 8px;
 
     @media screen and (min-width:768px){
@@ -188,7 +188,7 @@
     font-size: 24px;
     text-transform: uppercase;
     line-height: 1.17;
-    color: $accent-color;
+    color: var(--accent-color);
     margin-bottom: 16px;
 
     @media screen and (min-width:768px){
@@ -201,19 +201,19 @@
     display: block;
     height: 24px;
     width: 288px;
-    border-bottom: 1px solid $accent-color;
+    border-bottom: 1px solid var(--accent-color);
     border-top: none;
     border-right: none;
     border-left: none;
     outline: none;
     background-color: transparent;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
     font-size: 16px;
 
     &::placeholder {
         font-size: 16px;
         line-height: 1.25;
-        color: $primary-text-color;
+        color: var(--primary-text-color);
     }
 
     @media screen and (min-width:768px){
@@ -243,7 +243,7 @@
     resize: none;
     height: 95px;
     width: 287px;
-    border: 1px solid $accent-color;
+    border: 1px solid var(--accent-color);
     outline: none;
     background-color: transparent;
 
@@ -312,7 +312,7 @@
     transform: translateX(-50%) scale(1);
     width: 272px;
     opacity: 1;
-    background-color: $background-color;
+    background-color: var(--background-color);
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -336,7 +336,7 @@
     line-height: 1.17;
     font-weight: 600;
     text-align: center;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
     @media screen and (min-width:768px){
     font-size: 56px;}
@@ -347,7 +347,7 @@
     font-size: 16px;
     line-height: 1.19;
     text-transform: uppercase;
-    color: $background-color;
+    color: var(--background-color);
 
     transition: box-shadow 250ms linear;
 
@@ -369,7 +369,7 @@
     right: 24px;
     cursor: pointer;
     border-radius: 50%;
-    border: 1.5px solid $accent-color;
+    border: 1.5px solid var(--accent-color);
     height: 32px;
     width: 32px;
     padding: 0;
@@ -377,5 +377,5 @@
 }
 
 .modal__close-icon {
-    fill: $accent-color; 
+    fill: var(--accent-color); 
 }

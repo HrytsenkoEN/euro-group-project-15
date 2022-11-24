@@ -9,8 +9,6 @@ section {
 
 img {
     display: block;
-    max-width: 100%;
-    height: auto;
 }
 textarea {
     resize: none;
@@ -46,8 +44,8 @@ input {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    color: #FFFFFF;
-    border-bottom: 1px solid #7BE34A;
+    color: var(--primary-text-color);
+    border-bottom: 1px solid var(--accent-color);
     @include min-mobile{
       font-size: 24px;
       line-height: 1.16;
@@ -73,7 +71,7 @@ input {
     font-weight: 600;
     font-size: 56px;
     line-height: 1.18;
-    color: #FFFFFF;
+    color: var(--primary-text-color);
     margin-bottom: 32px;
 }
     @media screen and (max-width:1279px) {
@@ -85,7 +83,7 @@ input {
     font-weight: 600;
     font-size: 56px;
     line-height: 1.18;
-    color: #FFFFFF;
+    color: var(--primary-text-color);
     margin-bottom: 24px;
     @media screen and (min-width: 320px) and (max-width: 469px) {
         font-size: 24px;
@@ -103,7 +101,7 @@ input {
 // -----------заголовок перед формой
 .takeorder-title-top {
    font-weight: 600;
-   color: #86E543;
+   color: var(--accent-color);
     @include min-mobile{
             font-size: 24px;
             line-height: 1.17;
@@ -189,7 +187,7 @@ input {
         font-weight: 600;
         font-size: 24px;
         text-decoration-line: line-through;
-        color: #8D9289;
+        color: var(--secondary-text-color);
 }
 .takeorder-price-old{
     font-family: 'Roboto';
@@ -197,7 +195,7 @@ input {
     font-weight: 600;
     font-size: 24px;
     text-decoration-line: line-through;
-    color: #8D9289;
+    color: var(--secondary-text-color);
     @include min-mobile{
         display: block;
         margin-top: 10px;
@@ -230,16 +228,16 @@ input {
     font-weight: 600;
     font-size: 36px;
     line-height: 1.17;
-    color: #FFFFFF;
+    color: var(--primary-text-color);
 }
 .takeorder-input {
     display: block;
     width: 100%;
-    border-bottom: 1px solid #86E543;
+    border-bottom: 1px solid var(--accent-color);
     background-color: transparent;
     font-size: 18px;
     line-height: 1.11;
-    color: #FFFFFF;
+    color: var(--primary-text-color);
     margin-bottom: 64px;
     padding-left: 10px;
     @include min-mobile{
@@ -255,7 +253,7 @@ input {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    color: #FFFFFF;
+    color: var(--primary-text-color);
     line-height: 1.11;
     @include min-mobile {
             font-size: 16px;
@@ -267,7 +265,7 @@ input {
     width: 589px;
     height: 310px;
     background-color: transparent;
-    border: 1px solid #86E543;
+    border: 1px solid var(--accent-color);
     border-radius: 0px;
     padding: 10px;
     @include min-mobile{
@@ -330,7 +328,7 @@ select {
     width: 590px;
     height: 13px;
     overflow: hidden;
-    border-bottom: 1px solid #86E543;
+    border-bottom: 1px solid var(--accent-color);
     padding-left: 10px;
     margin-bottom: 64px;
     @include min-mobile{
@@ -342,7 +340,7 @@ select {
     font-style: normal;
     font-size: 12px;
     line-height: 1.11;
-    color: #FFFFFF;
+    color: var(--primary-text-color);
     cursor: pointer;
 }
 .takeorder-blok-select::after {
@@ -356,8 +354,9 @@ select {
     height: 0;
     border-style: solid;
     border-width: 15.4px 10px 0 10px;
-    border-color: #FFFFFF transparent transparent transparent;
+    border-color: var(--primary-text-color) transparent transparent transparent;
 }
+
 // .from-icon-check {
 //     position: absolute;
 //     display: inline-block;
