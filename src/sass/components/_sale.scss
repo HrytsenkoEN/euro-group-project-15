@@ -10,13 +10,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         & {
-            background-image: url(../images/sale-images/salebg-imagemob@2x.png), url(../images/sale-images/salebg-imagetab@2x.jpg);
+            background-image: url(../images/sale-images/salebg-imagemob@2x.png), url(../images/sale-images/salebg-imagemob1@2x.jpg);
 
         }
     }
-
-
-
 
 
     @media screen and (min-width: 768px) {
