@@ -1,30 +1,20 @@
 .footer {
   background-color: #001414;
-  max-width: 767px;
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
-  }
+  max-width: 100%;
 }
 
 .footer-container {
   padding: 25px 32px 24px 16px;
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 100%;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
     padding: 40px 50px 40px 40px;
     flex-direction: row;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
     padding: 40px 178px 40px 40px;
   }
 }
@@ -57,6 +47,7 @@
 .footer-menu {
   display: flex;
   gap: 160px;
+  margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
     gap: 89px;
@@ -123,6 +114,8 @@
   display: block;
   font-size: 16px;
   line-height: 1.19;
-  color: var(--secondary-text-color);
+
+  color: var(--primary-text-color);
+
   margin-top: 8px;
 }
