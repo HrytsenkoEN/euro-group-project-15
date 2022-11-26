@@ -1,10 +1,3 @@
-img {
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .blog-article {
   margin-left: auto;
   margin-right: auto;
@@ -112,6 +105,11 @@ img {
 }
 
 .blog-article-img {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
   @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 20px;
   }

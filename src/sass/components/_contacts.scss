@@ -42,7 +42,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
     @media screen and (min-width:768px){
         font-size: 56px;
@@ -115,7 +115,7 @@
 .contacts-text {
     font-size: 16px;
     line-height: 1.19;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
     @media screen and (min-width:768px){
         font-size: 24px;
@@ -127,7 +127,7 @@
     margin-top: 19px;
     font-size: 16px;
     line-height: 1.19;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
     @media screen and (min-width:768px){
         margin-top: 28px;
@@ -139,7 +139,7 @@
     display: block;
     font-size: 16px;
     line-height: 1.19;
-    color: $secondary-text-color;
+    color: var(--secondary-text-color);
     margin-top: 8px;
 
     @media screen and (min-width:768px){
@@ -207,13 +207,13 @@
     border-left: none;
     outline: none;
     background-color: transparent;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
     font-size: 16px;
 
     &::placeholder {
         font-size: 16px;
         line-height: 1.25;
-        color: $primary-text-color;
+        color: var(--primary-text-color);
     }
 
     @media screen and (min-width:768px){
@@ -243,7 +243,7 @@
     resize: none;
     height: 95px;
     width: 287px;
-    border: 1px solid $accent-color;
+    border: 1px solid var(--accent-color);
     outline: none;
     background-color: transparent;
 
@@ -312,7 +312,7 @@
     transform: translateX(-50%) scale(1);
     width: 272px;
     opacity: 1;
-    background-color: $background-color;
+    background-color: var(--background-color);
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -336,7 +336,7 @@
     line-height: 1.17;
     font-weight: 600;
     text-align: center;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
     @media screen and (min-width:768px){
     font-size: 56px;}
@@ -347,7 +347,7 @@
     font-size: 16px;
     line-height: 1.19;
     text-transform: uppercase;
-    color: $background-color;
+    color: var(--background-color);
 
     transition: box-shadow 250ms linear;
 
