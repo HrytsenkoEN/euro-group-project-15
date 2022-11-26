@@ -82,7 +82,7 @@
     line-height: 1.19;
     text-transform: uppercase;
     color: var(--background-color);
-
+    background-color: var(--accent-color);
     transition: box-shadow 250ms linear;
 
     &:hover, &:focus {

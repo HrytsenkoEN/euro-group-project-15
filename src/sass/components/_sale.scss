@@ -10,13 +10,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         & {
-            background-image: url(../images/sale-images/salebg-imagemob@2x.png), url(../images/sale-images/salebg-imagetab@2x.jpg);
+            background-image: url(../images/sale-images/salebg-imagemob@2x.png), url(../images/sale-images/salebg-imagemob1@2x.jpg);
 
         }
     }
-
-
-
 
 
     @media screen and (min-width: 768px) {
@@ -99,7 +96,7 @@
     font-size: 24px;
     line-height: 1.17;
 
-    color: --primary-text-color;
+    color: var(--primary-text-color);
 
     @media screen and (min-width:768px) {
         margin-bottom: 51px;
@@ -171,7 +168,7 @@
     font-weight: 500;
     font-size: 22px;
     line-height: 1.18;
-    color: --accent-color;
+    color: var(--accent-color);
 }
 
 .sale-card-price {
@@ -192,7 +189,7 @@
 
     text-decoration-line: line-through;
 
-    color: --secondary-text-color;
+    color: var(--secondary-text-color);
 }
 
 .sale-card-new-price {
@@ -202,7 +199,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1;
-    color: --accent-color;
+    color: var(--accent-color);
 }
 
 .sale-item {
@@ -276,8 +273,8 @@
     font-size: 16px;
     line-height: 1.19;
 
-    color: --background-color;
-    background-color: --primary-text-color;
+    color: var(--background-color);
+    background-color: var(--primary-text-color);
     border-radius: 16px;
 
     cursor: pointer;

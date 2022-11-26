@@ -26,8 +26,9 @@ input {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    
     @include mobile {
-        width: 480px;
+        width: 320px;
     }
     @include tablet {
         width: 768px;
@@ -36,8 +37,26 @@ input {
         width: 1280px;
     }
 }
-// ---------------для секціїї-------------
 
+// ---------------для секціїї-------------
+.takeorder .container {
+    background-image: url('../images-accessories/line-1-mob.png'),
+    url('../images-accessories/line-2-mob.png');
+    background-repeat: no-repeat;
+    background-size: contain, contain, cover;
+    background-position: 0px 15px, 0px 12px, 0px 0px;
+    
+    @include tablet {
+        background-image: url('../images-takeorder/line-1.png'),
+        url('../images-takeorder/line-2.png');
+        background-position: 0px 50px, 0px 57px, 0px 0px;
+    }
+    @include desktop {
+        background-image: url('../images-accessories/line-1.png'),
+        url('../images-accessories/line-2.png');
+        background-position: 0px 60px, 0px 70px, 0px 0px;
+    }
+}
 // -------------головний заголовок
 
 .takeorder-title {
@@ -47,11 +66,12 @@ input {
     color: var(--primary-text-color);
     border-bottom: 1px solid var(--accent-color);
     @include min-mobile{
-      font-size: 24px;
+      font-size: 26px;
       line-height: 1.16;
       margin-bottom: 35px;
     }
     @include tablet{
+        padding-left: 59px;
       font-size: 56px;
       line-height: 1.18;
       margin-bottom: 51px;
@@ -134,8 +154,9 @@ input {
     border-radius: 12px;
 }
 .takeorder-top {
+    
   @include desktop{
-        display: flex;
+    display: flex;
         justify-content: space-between;
         align-items: flex-end;
     }
@@ -144,18 +165,29 @@ input {
     margin-top: 16px;
 }
 
-.takeorder-mob,
-.takeorder-price-mob{
- @include tablet {
+.takeorder-price-mob {
+    margin-bottom: 16px;
+}
+
+.takeorder-mob{
+ @include desktop {
             display: none;
         }
 }
+.takeorder-item {
+    @include max-mobile{
+        width: 60px;
+    }
+}
+.takeorder-picture {
+    border-radius: 5px;
+}
 .takeorder-list {
         display: flex;
-        gap: 24px;
+        justify-content: space-between;
     }
  .takeorder-list-mob{
-    @include max-mobile{
+    @include max-desktop{
         display: flex;
             gap: 16px;
     }
@@ -166,12 +198,22 @@ input {
 .take-pic-mob{
     border-radius: 4px;
 }
+
+.takeorder-part-right {
+    @include only-tablet {
+        margin-top: 24px;
+    }
+}
+
 .takeorder-price {
+        @include only-tablet {
+            display: none;
+        }
         @include min-mobile {
             display: flex;
-            align-items: center;
-            gap: 60px;
-                margin-bottom: 16px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 16px;
             }
             @include desktop {
             display: flex;
@@ -185,7 +227,7 @@ input {
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
+        font-size: 16px;
         text-decoration-line: line-through;
         color: var(--secondary-text-color);
 }
@@ -201,12 +243,16 @@ input {
         margin-top: 10px;
         font-size: 16px;
     }
+    @include only-tablet {
+        display: block;
+        margin-bottom: 56px;
+    }
 }
 .takeorder-price-new-mob{
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 600;
-        font-size: 48px;
+        font-size: 32px;
         text-align: right;
         color: var(--accent-color);
 }
@@ -222,6 +268,9 @@ input {
         font-size: 23px;
     }
 }
+
+
+
 .takeorder-subtitle {
     font-family: 'Roboto';
     font-style: normal;
@@ -239,7 +288,6 @@ input {
     line-height: 1.11;
     color: var(--primary-text-color);
     margin-bottom: 64px;
-    padding-left: 10px;
     @include min-mobile{
         width: 100%;
         font-size: 16px;
@@ -263,11 +311,12 @@ input {
 }
 .takeorder-textarea {
     width: 589px;
-    height: 310px;
+    height: 336px;
     background-color: transparent;
     border: 1px solid var(--accent-color);
     border-radius: 0px;
     padding: 10px;
+    color: var(--primary-text-color);
     @include min-mobile{
         width:287px ;
         height: 95px;
@@ -280,12 +329,14 @@ input {
     font-size: 18px;
     line-height: 1.11;
     color: #CDCDCD;
+    margin-bottom: 4px;
     @include min-mobile{
         font-size: 16px;
         line-height: 1.25;
     }
 }
 .takeorder-label {
+    
     @include min-mobile{
         display: block;
     }
@@ -303,30 +354,37 @@ input {
     align-items: baseline;
  }
 }
-.takeorder-part-right {
-    @include max-mobile {
-        display: none;
+.takeorder-price-wrap {
+    display: flex;
+}
+
+.takeorder-price-sub {
+    display: none;
+    @include only-tablet {
+        display: block;
+        margin-left: 40px;
+        margin-top: 69px;
     }
 }
+
 .takeorder-right {
     @include desktop{
             margin-left: 20px;
+            height: 360px;
     }
 }
 select {
     appearance: none;
     outline: 0;
-    /* box-shadow: none; */
     border: none;
     background-color: transparent;
-    /* background-image: none; */
     width: 100%;
 }
 .takeorder-blok-select {
     position: relative;
     display: flex;
     width: 590px;
-    height: 13px;
+    height: 20px;
     overflow: hidden;
     border-bottom: 1px solid var(--accent-color);
     padding-left: 10px;
@@ -335,16 +393,21 @@ select {
         width: 288px;
     }
 }
+.takeorder-blok-select--last {
+    @include desktop {
+        margin-bottom: 0;
+    }
+}
 .takeorder-select {
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.11;
     color: var(--primary-text-color);
     cursor: pointer;
 }
 .takeorder-blok-select::after {
-    content: '';
+    content: ' ';
     position: absolute;
     right: 10px;
     transform: translateY(-50%);
@@ -356,6 +419,51 @@ select {
     border-width: 15.4px 10px 0 10px;
     border-color: var(--primary-text-color) transparent transparent transparent;
 }
+
+// =======
+// .takeorder-form-contacts {
+//     @include only-tablet{
+//         padding-left: 65px;
+//         padding-right: 65px;
+//     }
+// }
+// .button--buyitnow-takeorder,
+// .button--addtocart-takeorder {
+    
+//     @include max-mobile {
+//         padding-left: 42px;
+//         padding-right: 42px;
+//         width: 173px;
+//         font-size: 16px;
+//     }
+// }
+// .button--addtocart-takeorder {
+//     @include desktop {
+//         margin-left: 20px;
+//      } 
+//     @include max-desktop {
+//         margin-top: 24px;
+//      } 
+//     @include max-mobile {
+//         padding-left: 34px;
+//         padding-right: 34px;
+//         margin-top: 16px;
+//     }
+       
+// }
+// .button-wrap {
+//     margin-top: 48px;
+//     display: flex;
+//     justify-content: center;
+//     @include max-desktop {
+//         margin-top: 24px;
+        
+//     flex-wrap: wrap;
+    
+//     }
+    
+// }
+
 
 // .from-icon-check {
 //     position: absolute;
@@ -369,3 +477,94 @@ select {
 //     transition: border 250ms var(--accent-text-color),
 //         background-color 250ms var(--accent-text-color);
 // }
+
+
+// =======
+// .contacts-backdrop {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(0, 20, 20, 0.8);
+//     opacity: 1;
+//     transition: opaсity 250ms linear;
+// }
+// .is-hidden {
+//     opacity: 0;
+//     pointer-events: none;
+//     visibility: hidden;
+// }
+// .contacts-backdrop .is-hidden {
+//     transform: translate(-50%, -50%) scale(0.7);
+    
+// }
+// .contacts-modal {
+//     position: absolute;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 32px;
+//     top: 100px;
+//     left: 50%;
+//     transform: translateX(-50%) scale(1);
+//     width: 272px;
+//     opacity: 1;
+//     background-color: var(--background-color);
+//     padding-top: 100px;
+//     padding-bottom: 100px;
+//     transition: transform 250ms linear, opacity 250ms linear;
+//     @media screen and (min-width:768px){
+//         top: 200px;
+//         width: 688px;
+//         gap: 80px;
+//         padding-top: 88px;
+//         padding-bottom: 88px;}
+//     @media screen and (min-width:1280px){
+//         top: 360px;
+//         width: 768px;}
+// }
+// .contacts-modal-text {
+//     display: block;
+//     font-size: 24px;
+//     line-height: 1.17;
+//     font-weight: 600;
+//     text-align: center;
+//     color:var(--primary-text-color);
+//     @media screen and (min-width:768px){
+//     font-size: 56px;}
+// }
+// .button--ok{
+//     padding: 16px 75px;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-transform: uppercase;
+//     color: var(--background-color);
+//     transition: box-shadow 250ms linear;
+//     &:hover, &:focus {
+//         box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+//         }
+//     @media screen and (min-width:768px){
+//         font-size: 32px;
+//         padding: 16px 132px;}
+// }
+// .contacts-modal--btn-close {
+//     position: absolute;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     top: 24px;
+//     right: 24px;
+//     cursor: pointer;
+//     border-radius: 50%;
+//     border: 1.5px solid var(--accent-color);
+//     height: 32px;
+//     width: 32px;
+//     padding: 0;
+//     background-color: transparent;
+// }
+// .modal__close-icon {
+//     fill: var(--accent-color);
+// }
+// >>>>>>> main
