@@ -11,31 +11,31 @@
     margin-left: auto;
     margin-right: auto;
     background-position: center;
-    background-color: $background-color;
-    background-image: url(/images-contacts/Vector\ 26.svg),
-    url(/images-contacts/Vector\ 27.svg), url(/images-contacts/background-mob.jpg);
+    background-color: var(--background-color);
+    background-image: url('../images-contacts/vector-26.svg'),
+    url('../images-contacts/vector-27.svg'), url('../images-contacts/background-mob.jpg');
     background-position: 0px 48px, 0px 52px, 0px 0px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images-contacts/Vector\ 26.svg),
-    url(/images-contacts/Vector\ 27.svg), url(/images-contacts/background-mob@2x.jpg);} 
+    background-image: url('../images-contacts/vector-26.svg'),
+    url('../images-contacts/vector-27.svg'), url('../images-contacts/background-mob@2x.jpg');} 
 
     @media screen and (min-width: 768px) {
-    background-image: url(/images-contacts/Vector\ 22.svg),
-    url(/images-contacts/Vector\ 24.svg), url(/images-contacts/background-tablet.jpg);
+    background-image: url('../images-contacts/vector-22.svg'),
+    url('../images-contacts/vector-24.svg'), url('../images-contacts/background-tablet.jpg');
     background-position: 0px 174px, 0px 168px, 0px 0px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images-contacts/Vector\ 22.svg),
-    url(/images-contacts/Vector\ 24.svg), url(/images-contacts/background-tablet@2x.jpg);}}
+    background-image: url('../images-contacts/vector-22.svg'),
+    url('../images-contacts/vector-24.svg'), url('../images-contacts/background-tablet@2x.jpg');}}
 
     @media screen and (min-width:1280px){
-    background-image: url(/images-contacts/Vector\ 23.svg),
-    url(/images-contacts/Vector\ 25.svg), url(/images-contacts/background-desk.jpg);
+    background-image: url('../images-contacts/vector-23.svg'),
+    url('../images-contacts/vector-25.svg'), url('../images-contacts/background-desk.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images-contacts/Vector\ 23.svg),
-    url(/images-contacts/Vector\ 25.svg), url(/images-contacts/background-desk@2x.jpg);}}
+    background-image: url('../images-contacts/vector-23.svg'),
+    url('../images-contacts/vector-25.svg'), url('../images-contacts/background-desk@2x.jpg');}}
 }
 
 .contacts-title {
@@ -64,7 +64,7 @@
     margin-right: auto;
     background-position: center;
     overflow: hidden;
-    background-image: url(/images-contacts/contacts-mob.jpg);
+    background-image: url('../images-contacts/contacts-mob.jpg');
 
     @media screen and (min-width:768px){
         background-size: cover;
@@ -81,19 +81,19 @@
         margin-bottom: 57px;}
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images-contacts/contacts-mob@2x.jpg);} 
+    background-image: url('../images-contacts/contacts-mob@2x.jpg');} 
 
     @media screen and (min-width: 768px) {
-    background-image: url(/images-contacts/contacts-tablet.jpg);
+    background-image: url('../images-contacts/contacts-tablet.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images-contacts/contacts-tablet@2x.jpg);}}
+    background-image: url('../images-contacts/contacts-tablet@2x.jpg');}}
 
     @media screen and (min-width:1280px){
-    background-image:  url(/images-contacts/contacts-desk.jpg);
+    background-image:  url('../images-contacts/contacts-desk.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image:  url(/images-contacts/contacts-desk@2x.jpg);}}
+    background-image:  url('../images-contacts/contacts-desk@2x.jpg');}}
 }
 
 .contacts-position{
@@ -188,7 +188,7 @@
     font-size: 24px;
     text-transform: uppercase;
     line-height: 1.17;
-    color: $accent-color;
+    color: var(--accent-color);
     margin-bottom: 16px;
 
     @media screen and (min-width:768px){
@@ -201,7 +201,7 @@
     display: block;
     height: 24px;
     width: 288px;
-    border-bottom: 1px solid $accent-color;
+    border-bottom: 1px solid var(--accent-color);
     border-top: none;
     border-right: none;
     border-left: none;
@@ -369,7 +369,7 @@
     right: 24px;
     cursor: pointer;
     border-radius: 50%;
-    border: 1.5px solid $accent-color;
+    border: 1.5px solid var(--accent-color);
     height: 32px;
     width: 32px;
     padding: 0;
@@ -377,5 +377,5 @@
 }
 
 .modal__close-icon {
-    fill: $accent-color; 
+    fill: var(--accent-color); 
 }
