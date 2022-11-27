@@ -13,10 +13,7 @@
 
     mobileMenuRef.classList.toggle("is-open");
   });
-    function toggleMenu() {
-  
-      refs.body.classList.toggle("no-scroll");
-  }
+
 })();
 // ---------------------------Menu
 (() => {
