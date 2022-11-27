@@ -64,7 +64,6 @@ input {
     font-style: normal;
     font-weight: 600;
     color: var(--primary-text-color);
-    border-bottom: 1px solid var(--accent-color);
     @include min-mobile{
       font-size: 26px;
       line-height: 1.16;
@@ -157,22 +156,35 @@ input {
     
   @include desktop{
     display: flex;
+   
         justify-content: space-between;
         align-items: flex-end;
+    
     }
 }
-.takeorder-mob {
-    margin-top: 16px;
+.takeorder-wrap {
+    @include tablet {
+        display: flex;
 }
+    @include desktop {
+    align-items: flex-end;
+}
+}
+
 
 .takeorder-price-mob {
     margin-bottom: 16px;
+    @include tablet {
+        display: none;
+    }
 }
 
 .takeorder-mob{
- @include desktop {
-            display: none;
-        }
+    display: none;
+    @include only-tablet {
+        display: block;
+        margin-top: 24px;
+    }
 }
 .takeorder-item {
     @include max-mobile{
@@ -185,11 +197,14 @@ input {
 .takeorder-list {
         display: flex;
         justify-content: space-between;
+        @include only-tablet {
+            display: none;
+        }
     }
  .takeorder-list-mob{
     @include max-desktop{
         display: flex;
-            gap: 16px;
+        justify-content: space-between;
     }
     @include desktop{
         display: none;
@@ -201,14 +216,16 @@ input {
 
 .takeorder-part-right {
     @include only-tablet {
-        margin-top: 24px;
+        margin-top: 44px;
+        margin-left: 40px;
+    }
+    @include desktop{
+        margin-left: 121px;
     }
 }
 
 .takeorder-price {
-        @include only-tablet {
-            display: none;
-        }
+       
         @include min-mobile {
             display: flex;
             flex-wrap: wrap;
@@ -419,7 +436,11 @@ select {
     border-width: 15.4px 10px 0 10px;
     border-color: var(--primary-text-color) transparent transparent transparent;
 }
-
+.contact {
+    @include only-tablet {
+        padding: 0 60px;
+    }
+}
 // =======
 // .takeorder-form-contacts {
 //     @include only-tablet{
