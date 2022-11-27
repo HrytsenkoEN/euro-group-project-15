@@ -10,4 +10,33 @@
     </h1>
     <a href="./accessories.html" class="hero-link">Start shopping</a>
   </div>
+  <div class="hero-image-container">
+    <picture>
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ./images/hero-images/hero2desc.png    1x,
+          ./images/hero-images/hero2desc@2x.png 2x
+        "
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./images/hero-images/hero2tab.png    1x,
+          ./images/hero-images/hero2tab@2x.png 2x
+        "
+      />
+
+      <img
+        srcset="
+          ./images/hero-images/hero2mob.png    1x,
+          ./images/hero-images/hero2mob@2x.png 2x
+        "
+        alt="sale-proposition"
+        src="./images/hero-images/hero2mob.png"
+        loading="lazy"
+        class="hero-image"
+      />
+    </picture>
+  </div>
 </section>

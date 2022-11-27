@@ -1,18 +1,18 @@
 .hero {
+    position: relative;
     padding-top: 0;
     padding-bottom: 0;
-    background-image: url(../images/hero-images/hero2mob.png), url(../images/hero-images/heromob.jpg);
-    background-size: contain, cover;
-    background-position: top right, center;
+    background-image: url(../images/hero-images/heromob.jpg);
+    background-size: 320px 483px;
+    background-position: left top;
     background-repeat: no-repeat;
-
 
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         & {
-            background-image: url(../images/hero-images/hero2mob@2x.png), url(../images/hero-images/heromob@2x.jpg);
+            background-image: url(../images/hero-images/heromob@2x.jpg);
 
         }
     }
@@ -20,36 +20,53 @@
 
     @media screen and (min-width: 768px) {
 
-        background-size: contain, cover;
-        background-position: top 33px right 0px, center;
-        background-image: url(../images/hero-images/hero2tab.png), url(../images/hero-images/herotab.jpg);
+        background-size: cover;
+        background-position: center;
+        background-image:  url(../images/hero-images/herotab.jpg);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             & {
-                background-image: url(../images/hero-images/hero2tab@2x.png), url(../images/hero-images/herotab2x.jpg);
+                background-image: url(../images/hero-images/herotab2x.jpg);
             }
 
         }
 
 
         @media screen and (min-width:1280px) {
-
-
-            background-image: url(../images/hero-images/hero2desc.png), url(../images/hero-images/herodesc.jpg);
+          background-size: contain;
+          background-position: center;        
+            background-image: url(../images/hero-images/herodesc.jpg);
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 & {
-                    background-image: url(../images/hero-images/hero2desc@2x.png), url(../images/hero-images/herodesc@2x.jpg);
+                    background-image: url(../images/hero-images/herodesc@2x.jpg);
                 }
 
             }
         }
     }
 }
+
+.hero-image-container {
+    position: absolute;
+    top: -55px;
+    right: 0;
+
+    @media screen and (min-width:768px) {
+        top: 33px;
+        right: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: 0;
+        right: 78px;
+    }
+}
+
 
 .hero-content {
 
