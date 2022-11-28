@@ -5,6 +5,40 @@
   margin-right: auto;
 }
 
+.blog-article-section{
+  background-image: url(../images/blog-article-img/mobile/Vector\ 26.svg),
+  url(../images/blog-article-img/mobile/Vector\ 27.svg),
+  url(../images/blog-article-img/bg-mobile.jpg);
+background-repeat: no-repeat;
+background-size: contain, contain, cover;
+background-position: 0px 115px, 0px 119px, 0px 0px;
+@media screen and (min-width: 768px) {
+  background-image: url(../images/blog-article-img/tablet/Vector\ 24.svg),
+    url(../images/blog-article-img/tablet/Vector\ 22.svg),
+    url(../images/blog-article-img/bg-tablet.jpg);
+  background-repeat: no-repeat;
+  background-size: contain, contain, cover;
+  background-position: 0px 258px, 0px 266px, 0px 0px;
+
+  // max-width: 768px;
+  // padding-left: 40px;
+  // padding-right: 40px;
+  // padding-top: 120px;
+  // padding-bottom: 120px;
+}
+@media screen and (min-width: 1280px) {
+  background-image: url(../images/blog-article-img/desktop/Vector\ 24.svg),
+    url(../images/blog-article-img/desktop/Vector\ 22.svg),
+    url(../images/blog-article-img/bg-desktop.jpg);
+
+  background-repeat: no-repeat;
+  background-size: contain, contain, cover;
+  background-position: top 208px right 0px, top 216px right 0px, top right;
+
+  // max-width: 1280px;
+  // padding-top: 112px;
+}
+}
 .blog-article {
   margin-left: auto;
   margin-right: auto;
@@ -13,20 +47,20 @@
   padding-top: 40px;
   padding-bottom: 48px;
   max-width: 480px;
-  background-image: url(../images/blog-article-img/mobile/Vector\ 26.svg),
-    url(../images/blog-article-img/mobile/Vector\ 27.svg),
-    url(../images/blog-article-img/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: contain, contain, cover;
-  background-position: 0px 70px, 0px 74px, 0px 0px;
+  // background-image: url(../images/blog-article-img/mobile/Vector\ 26.svg),
+  //   url(../images/blog-article-img/mobile/Vector\ 27.svg),
+  //   url(../images/blog-article-img/bg-mobile.jpg);
+  // background-repeat: no-repeat;
+  // background-size: contain, contain, cover;
+  // background-position: 0px 70px, 0px 74px, 0px 0px;
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/blog-article-img/tablet/Vector\ 24.svg),
-      url(../images/blog-article-img/tablet/Vector\ 22.svg),
-      url(../images/blog-article-img/bg-tablet.jpg);
-    background-repeat: no-repeat;
-    background-size: contain, contain, cover;
-    background-position: 0px 228px, 0px 236px, 0px 0px;
+    // background-image: url(../images/blog-article-img/tablet/Vector\ 24.svg),
+    //   url(../images/blog-article-img/tablet/Vector\ 22.svg),
+    //   url(../images/blog-article-img/bg-tablet.jpg);
+    // background-repeat: no-repeat;
+    // background-size: contain, contain, cover;
+    // background-position: 0px 228px, 0px 236px, 0px 0px;
 
     max-width: 768px;
     padding-left: 40px;
@@ -36,13 +70,13 @@
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/blog-article-img/desktop/Vector\ 24.svg),
-      url(../images/blog-article-img/desktop/Vector\ 22.svg),
-      url(../images/blog-article-img/bg-desktop.jpg);
+    // background-image: url(../images/blog-article-img/desktop/Vector\ 24.svg),
+    //   url(../images/blog-article-img/desktop/Vector\ 22.svg),
+    //   url(../images/blog-article-img/bg-desktop.jpg);
 
-    background-repeat: no-repeat;
-    background-size: contain, contain, cover;
-    background-position: top 168px right 0px, top 176px right 0px, top right;
+    // background-repeat: no-repeat;
+    // background-size: contain, contain, cover;
+    // background-position: top 168px right 0px, top 176px right 0px, top right;
 
     max-width: 1280px;
     padding-top: 112px;
