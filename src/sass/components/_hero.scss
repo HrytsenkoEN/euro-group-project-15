@@ -82,12 +82,14 @@
         padding-bottom: 208px;
         padding-left: 40px;
         padding-right: 340px;
+        margin-bottom: -50px;
     }
 
     @media screen and (min-width:1280px) {
         padding-right: 623px;
         padding-top: 180px;
         padding-left: 142px;
+        margin-bottom: 0;
     }
 
 }
