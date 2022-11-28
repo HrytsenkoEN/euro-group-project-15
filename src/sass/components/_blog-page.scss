@@ -51,26 +51,24 @@ body{
     background-image: url(../blog-img/background-desc-1x.jpg);
 
 }
-.blog{
-    margin: 0 auto;
-    padding-top: 40px;
+.blog-section{
     background-image: url(../blog-img/Vector\ 26.svg),
     url(../blog-img/Vector\ 27.svg), url(../blog-img/background-mob-1x.jpg);
     
 
   background-repeat: no-repeat;
   background-size: contain, contain, cover;
-  background-position: 0px 50px, 0px 55px, 0px 0px;
-
+  background-position: 0px 80px, 0px 85px, 0px 0px;
+  
   @media screen and (min-width: 768px) {
     background-image: url(../blog-img/Vector\ 24.svg),
     url(../blog-img/Vector\ 22.svg), url(../blog-img/background-tab-1x.jpg);
     background-repeat: no-repeat;
     background-size: contain, contain, cover;
-    background-position: 0px 170px, 0px 175px, 0px 0px;
+    background-position: 0px 200px, 0px 205px, 0px 0px;
 
-    max-width: 768px;
-    padding: 120px 20px;
+    // max-width: 768px;
+    // padding: 120px 20px;
     // padding: 120px 40px;
   }
 
@@ -80,7 +78,42 @@ body{
 
     background-repeat: no-repeat;
     background-size: contain, contain, cover;
-    background-position: top 158px right 0px, top 166px right 0px, top right;
+    background-position: top 188px right 0px, top 196px right 0px, top right;
+
+    // max-width: 1280px;
+    // padding-top: 112px;
+  }
+}
+.blog{
+    margin: 0 auto;
+    padding-top: 40px;
+//     background-image: url(../blog-img/Vector\ 26.svg),
+//     url(../blog-img/Vector\ 27.svg), url(../blog-img/background-mob-1x.jpg);
+    
+
+//   background-repeat: no-repeat;
+//   background-size: contain, contain, cover;
+//   background-position: 0px 50px, 0px 55px, 0px 0px;
+
+  @media screen and (min-width: 768px) {
+    // background-image: url(../blog-img/Vector\ 24.svg),
+    // url(../blog-img/Vector\ 22.svg), url(../blog-img/background-tab-1x.jpg);
+    // background-repeat: no-repeat;
+    // background-size: contain, contain, cover;
+    // background-position: 0px 170px, 0px 175px, 0px 0px;
+
+    max-width: 768px;
+    padding: 120px 20px;
+    // padding: 120px 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    // background-image: url(../blog-img/Vector\ 20.svg),
+    //     url(../blog-img/Vector\ 21.svg), url(../blog-img/background-desc-1x.jpg);
+
+    // background-repeat: no-repeat;
+    // background-size: contain, contain, cover;
+    // background-position: top 158px right 0px, top 166px right 0px, top right;
 
     max-width: 1280px;
     padding-top: 112px;
